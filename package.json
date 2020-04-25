@@ -19,5 +19,8 @@
     "deploy": "now",
     "gitHub": "git status && git add -A && git commit -am 'update' && git push",
     "kill;3004": "kill $(lsof -t -i:3004)"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
