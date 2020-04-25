@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "mongo",
+    "builds": [
+        { "src": "index.mjs", "use": "@now/node" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "index.mjs" }
+    ]
+}
