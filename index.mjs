@@ -55,9 +55,8 @@ app.get('/', async (req, res) => {
     }else{
         res.send(rss[0]['feed']['rss']);
     }
-
-
 })
+
 app.options('/feeds', cors(issue2options))
 app.get('/feeds',   cors(issue2options), async (req, res) => {
     let rss = await mongo({
